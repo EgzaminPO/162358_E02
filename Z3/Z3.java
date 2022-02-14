@@ -1,8 +1,12 @@
-package com.company;
+public static File[] allSubdirs(String location){
+    File plik = new File(location);
+    File[] pliki = plik.listFiles();
+    File[] wynik = pliki;
+    /*for(int i = 0; i < pliki.length; i++){
+        if(pliki[i].isDirectory()){
+            wynik.push(pliki[i]);
+        }
+    }*/
+    return pliki;
 
-public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("Witaj egzaminie!");
-    }
 }
